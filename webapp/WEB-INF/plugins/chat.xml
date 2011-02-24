@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+<plug-in>
+
+   <!-- Plugin Informations -->
+   <name>chat</name>
+   <class>fr.paris.lutece.plugins.chat.service.ChatPlugin</class>
+   <version>2.0.0</version>
+   <documentation></documentation>
+   <installation></installation>
+   <changes></changes>
+   <user-guide></user-guide>
+   <description>Module de Chat</description>
+   <provider>Mairie de Paris</provider>
+   <provider-url>http://lutece.paris.fr</provider-url>
+   <icon-url>images/admin/skin/plugins/chat/chat.png</icon-url>
+   <copyright>Copyright 2001-2009 Mairie de Paris</copyright>
+	<core-version-dependency>
+		<min-core-version></min-core-version>
+		<max-core-version></max-core-version>	
+	</core-version-dependency>
+	
+	<!-- if the plugin must have a connection pool with parameter : 1 - yes, 0 - no -->   
+   <db-pool-required>0</db-pool-required>
+
+    <!-- Applications -->
+    <applications>
+        <application>
+            <application-id>chat</application-id>
+            <application-class>fr.paris.lutece.plugins.chat.web.ChatApp</application-class>
+        </application>
+    </applications>
+</plug-in>
+

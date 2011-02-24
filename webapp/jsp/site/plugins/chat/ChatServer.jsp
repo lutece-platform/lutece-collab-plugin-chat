@@ -1,0 +1,1 @@
+<jsp:useBean id="chat" scope="request" class="fr.paris.lutece.plugins.chat.web.ChatJspBean" /><%= chat.process( request ) %>

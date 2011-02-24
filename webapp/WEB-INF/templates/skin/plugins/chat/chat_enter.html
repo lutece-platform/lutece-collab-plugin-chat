@@ -1,0 +1,42 @@
+<br/>
+<br/>
+<br/>
+
+<center>
+    <form name="login_chat" action="" method="post">
+            <input type="hidden" name="page" value="chat">
+        <table width="600" >
+            <tr>
+                <th>Salon</th>
+                <th>Description</th>
+                <th>Nb utilisateurs</th>
+            </tr>
+            @rooms_list_row@
+        </table>
+        <br/>
+        <br/>
+        <table width="400">
+            <tr>
+                <td align="center">
+                    <b>Entrer votre pseudo :</b>
+                </td>
+                <td align="center">
+                    <input type="text" name="access_code">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Entrer dans le chat">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+<script language="javascript">
+    window.onload = login_chat.access_code.focus
+</script>
+<br/>
+<br/>
+<br/>
+<br/>
